@@ -25,6 +25,7 @@ public class Shooting : MonoBehaviour
     public TextMeshProUGUI reloadingDisplay;  // 顯示是不是正在換彈夾？
 
     public Animator animatorObject;  // 動畫播放器組件
+     public Animator animatorObject1;
 
     private void Start()
     {
@@ -89,6 +90,7 @@ public class Shooting : MonoBehaviour
         ShowAmmoDisplay();                 // 更新彈量顯示
 
         animatorObject.SetTrigger("Fire");  // 觸發「Fire」的觸發變數
+        animatorObject1.SetTrigger("Fire");
     }
 
     // 方法：換彈夾的延遲時間設定
